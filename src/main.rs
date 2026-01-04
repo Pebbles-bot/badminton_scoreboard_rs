@@ -98,8 +98,7 @@ impl eframe::App for App {
             let bgimage = Image::new(egui::include_image!("assets/imgs/bcourt.png"));
             bgimage.paint_at(ui, screen_rect);
 
-            //comment
-
+            // new comment
 
             ui.with_layout(egui::Layout::top_down(egui::Align::Center), |ui| {
 
