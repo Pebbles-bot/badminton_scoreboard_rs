@@ -1,0 +1,19 @@
+[package]
+name = "badminton_scoreboard"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+inquire = "0.7.5"
+
+eframe = { version = "0.33.3", features = [
+    "default",
+    "__screenshot", # __screenshot is so we can dump a screenshot using EFRAME_SCREENSHOT_TO
+] }
+
+# For image support:
+egui_extras = { version = "0.33.3", features = ["default", "image"] }
+
+env_logger = { version = "0.10", default-features = false, features = [
+    "humantime",
+] }
